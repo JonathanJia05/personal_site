@@ -12,7 +12,6 @@ export default function Home() {
           Todo List
         </Link>
       </header>
-      <ul></ul>
     </>
   );
 }

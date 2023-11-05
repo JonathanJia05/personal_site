@@ -1,0 +1,2 @@
+to run site: npm run dev
+to see users: npx prisma studio
