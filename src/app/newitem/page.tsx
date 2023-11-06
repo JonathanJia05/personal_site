@@ -11,10 +11,10 @@ async function createTodo(data: FormData) {
   }
 
   await prisma.todo.create({ data: { title, complete: false } });
-  redirect("/todolist")
+  redirect("/calendar")
 }
 
-export default function Page() {
+export default function NewItem() {
   return (
     <>
       <header className="flex justify-between">
@@ -28,7 +28,7 @@ export default function Page() {
         />
         <div className="flex gap-1 justify-end">
           <Link
-            href=".."
+            href="\calendar"
             className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none"
           >
             Cancel
